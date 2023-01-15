@@ -1,0 +1,205 @@
+
+
+body {
+   margin: 0 auto;
+   max-width: 1000px;
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   font-family: 'Source Sans Pro', calibri, Arial, sans-serif !important;
+   min-height: 550px;
+}
+.content {
+   flex: 1 0 auto;
+}
+footer {
+   padding: 10px 0;
+   text-align: center;
+}
+
+
+
+
+
+.app {   
+   min-width: 720px;
+}
+
+.app__sub {   
+   position: absolute;
+}
+
+
+
+
+
+.user__block {
+   margin: 10px;
+   display: inline-block;
+   max-width: 200px;
+}
+
+.user__field {
+   display: inline-block;
+   padding: 10px;
+}
+
+.filter__field {
+   display: block;
+}
+
+.user {
+   border-radius: 20px;
+   border: 2px solid #ddccff;
+   background-color: #ddccff;
+   margin: 10px;
+   overflow: hidden;
+}
+
+.users {
+   width: 700px;
+   padding-right: 10px;
+}
+
+.app__block {
+   display: inline-block;
+}
+
+.filters {
+   display: block;
+   left: 720px;
+   top: 100px;
+}
+
+
+
+
+
+.page {
+   cursor: pointer;
+   padding: 7px;
+   background-color: #ddccff;
+   display: inline-block;
+   margin: 5px;
+}
+
+.page.active{
+   background-color: #bbff99;
+}
+
+.pages {
+   max-width: 200px;
+}
+
+select {
+    background-color: transparent;
+    width: 50px;
+    height: 30px;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+.filter__field input,.filter__field input:focus {
+   background-color: transparent;
+   width: 200px;
+   height: 30px;
+   padding: 5px;
+   margin: 5px;
+   border: 2px solid #bbff99;
+   outline: none;
+}
+
+
+
+.cdk-overlay-container {
+   position: fixed;
+   top: 0;
+   right: 0;
+}
+
+.mat-datepicker-content {
+   background-color: white;
+}
+
+.datepicker {
+   display: block;
+   margin: 10px;
+}
+
+button.mat-icon-button{
+   background-color: #ddccff;
+}
+
+.mat-input-wrapper {
+   font-size: 14px;
+   width: 180px;
+}
+
+.datepicker .mat-input-element {
+   line-height: 50px;
+}
+
+.mat-calendar-period-button {
+   background-color: #bbff99;
+}
+
+
+
+
+svg.loading {
+   position: fixed;
+    margin: 0 auto;
+    width: 250px;
+    left: 30%;
+}
+
+
+
+@keyframes colorAnimation {
+  0% {
+   fill: #ddccff;
+   r:20;
+  }  
+  50% {
+   fill: #bbff99;
+   r:15;
+  }
+  100% {
+   fill: #ddccff;
+   r:20;
+  }
+}
+
+
+@keyframes colorAnimation2 {
+  0% {
+   fill: #bbff99;
+   r:20;
+  }  
+  50% {
+   fill: #ddccff;
+   r:25;
+  }
+  100% {
+   fill: #bbff99;
+   r:20;
+  }
+}
+
+
+.circle--1 {
+   animation: colorAnimation 1s 1s ease infinite;
+}
+.circle--2 {
+   animation: colorAnimation2 1s 1s ease infinite;
+}
+.circle--3 {
+   animation: colorAnimation 1s 1s ease infinite;
+}
+.circle--4 {
+   animation: colorAnimation2 1s 1s ease infinite;
+}
+.circle--5 {
+   animation: colorAnimation 1s 1s ease infinite;
+}

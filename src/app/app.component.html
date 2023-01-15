@@ -1,0 +1,13 @@
+<div class="app">
+	<svg class="loading" height="100" width="300" *ngIf="!users">
+	  <circle class="circle--1" cx="50" cy="50" r="20"  fill="#bbff99" />
+	  <circle class="circle--2" cx="90" cy="50" r="20"  fill="#ddccff" />
+	  <circle class="circle--3" cx="130" cy="50" r="20"  fill="#bbff99" />
+	  <circle class="circle--4" cx="170" cy="50" r="20"  fill="#ddccff" />
+	  <circle class="circle--5" cx="210" cy="50" r="20"  fill="#bbff99" />
+	</svg>
+	<div class="app__main app__block">
+		<user-list></user-list>
+	</div>
+	<filter class="app__sub app__block"></filter>
+</div>

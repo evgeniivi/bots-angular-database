@@ -1,0 +1,34 @@
+<div class="filters">
+	<div class="datepickers">
+		<div class="datepicker">
+			<mat-form-field>
+			  <input matInput class="form-control" [matDatepicker]="picker" [(ngModel)]="dobFrom"   (dateChange)="onChangeDob($event)" placeholder="Choose a date from">
+			  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+			  <mat-datepicker #picker></mat-datepicker>
+			</mat-form-field>
+		</div>
+		<div  class="datepicker">
+			<mat-form-field>
+			  <input matInput class="form-control" [matDatepicker]="picker2" [(ngModel)]="dobTo" (dateChange)="onChangeDob($event)"  placeholder="Choose a date to">
+			  <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+			  <mat-datepicker #picker2></mat-datepicker>
+			</mat-form-field>
+		</div>
+	</div>
+	<div class="filter__field">
+		<input type="" name="lastname" placeholder="Last Name"  (keyup)="onChangeLastName($event)">
+	</div>
+	<div class="filter__field">
+		<input type="" name="phone" placeholder="Phone"  (keyup)="onChangePhone($event)">
+	</div>
+	<div class="filter__field">
+		<input type="" name="city" placeholder="Location" class="form-control" (keyup)="onChangeLocation($event)">
+	</div>
+	
+	<select [(ngModel)]="pageSize" class="form-control" (change)="onChange()">
+		<option *ngFor="let pS of pageSizes" [value]="pS">{{pS}}</option>
+	</select>
+	<div class="pages">
+		<div class="page {{getPageClass(i)}}" *ngFor="let i of pagesArray" (click)="clickPage(i)">{{i+1}}</div>
+	</div>
+</div>

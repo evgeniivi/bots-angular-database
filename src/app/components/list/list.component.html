@@ -1,0 +1,40 @@
+<div class="users">
+	<div *ngFor="let user of users" class="user">
+		<div class="user__block">
+			<div class="user__field"><img src="{{user.avatar}}"></div>
+			<div class="user__field">{{user.first_name}}</div>
+			<div class="user__field">{{user.last_name}}</div>
+			<div class="user__field">{{user.birth_date}}</div>
+			<div class="user__field">{{user.gender}}</div>
+		</div>
+		<div class="user__block">
+			<div class="user__field">{{user.city}}</div>	
+			<div class="user__field">{{user.street}}</div>
+			<div class="user__field">{{user.reg_date}}</div>
+		</div>
+		<div class="user__block">
+			<div class="user__field">{{user.ip_address}}</div>
+			<div class="user__field">{{user.phone}}</div>
+			<div class="user__field">{{user.email}}</div>
+		</div>	
+	</div>
+</div>
+<!-- 
+/*
+{
+  "id": 1,
+  "gender": "Male",
+  "avatar": "https://robohash.org/velitipsaconsequatur.jpg?size=50x50&set=set1",
+  "first_name": "Kendell",
+  "last_name": "McRitchie",
+  "email": "kmcritchie0@networkadvertising.org",
+
+  "city": "Misungwi",
+  "street": "3 Kinsman Place",
+  "reg_date": "2016-08-09",
+
+  "ip_address": "244.237.8.138",
+  "phone": "515-116-6797",
+  "birth_date": "1988-01-18"
+}
+*/ -->
